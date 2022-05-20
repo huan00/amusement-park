@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+body {
+  width: 100vw;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: 10%;
+  background-repeat: no-repeat;
+}
+
+.navBar {
+  color: black;
+  text-decoration: none;
+}
+
+.navBar:hover {
+  text-decoration: underline;
+  background-color: #ffaaaa;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+/****************************/
+/************Header****************/
+/****************************/
+nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 25px 0;
+  /* border-bottom: 3px solid black; */
+}
+
+.headLink {
+  text-decoration: none;
+  color: black;
+}
+
+.headLink:hover {
+  color: blue;
+  font-weight: 700;
+}
+
+/****************************/
+/************Search****************/
+/****************************/
+
+.search {
+  background-image: url(./thrills\ &\ spills\ imgs/bg.jpg);
+  background-size: cover;
+  background-position: 100%;
+
+  padding: 50px;
+}
+
+input {
+  width: 40%;
+  margin: 20px 0 50px 0;
+  font-size: 20px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 10px 0 5px 20px;
+}
+
+::placeholder {
+  color: black;
+}
+
+input:hover {
+  background-color: beige;
+}
+
+button {
+  margin-left: 20px;
+
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(177, 124, 124);
+  color: white;
+}
+
+button:hover {
+  color: blue;
+  font-weight: 700;
+}
+
+/****************************/
+/************mainContent****************/
+/****************************/
+
+.pageTitle {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  margin: 0 auto 20px;
+  font-size: 50px;
+  font-family: 'Rye', cursive;
+  padding: 10px;
+
+  box-shadow: 0 0 20px white;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content h1 {
+  text-align: left;
+  margin: 50px 0 40px;
+  font-weight: 400;
+}
+
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-wrapper img {
+  width: 200px;
+}
+
+.categories section {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+/****************************/
+/************ParkCard****************/
+/****************************/
+
+.parkcards {
+  width: 300px;
+  margin: 0 10px 0 0;
+}
+
+.parkcards img {
+  width: 100%;
+  height: 200px;
+}
+
+.parkcards-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.parkcards-info h3 {
+  color: black;
+}
+
+.parkcards-info p {
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.viewPage {
+  text-decoration: none;
+}
+
+.parkcards:hover {
+  transform: scale(110%);
+}
+
+.parkcards h3 {
+  margin: 0;
+}
+
+.parkcards p {
+  margin: 0;
+}
+
+/****************************/
+/************AddRides****************/
+/****************************/
+
+.createRide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #8c9094;
+
+  height: 100%;
+  width: 60%;
+  margin: 50px auto;
+  opacity: 0.8;
+}
+
+.createRide input {
+  display: block;
+  width: 100%;
+
+  opacity: 1;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.createRide button {
+  margin-bottom: 50px;
+  color: black;
+}
+
+/****************************/
+/************AddPark****************/
+/****************************/
+
+.addPark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #8c9094;
+
+  height: 100%;
+  width: 60%;
+  margin: 50px auto;
+  opacity: 0.8;
+}
+
+.addPark form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.addPark input {
+  width: 250px;
+  margin: 10px;
+  border-radius: 0;
+}
+
+.addPark button {
+  margin: 0 0 50px;
+}
+
+.addPark input {
+  color: black;
+}
+
+.addPark select {
+  width: 270px;
+  height: 40px;
+  /* border-radius: 50px; */
+  padding: 5px 20px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.addPark select option {
+  width: 270px;
+}
+
+/****************************/
+/************ViewPage****************/
+/****************************/
+
+.parkImage {
+  border-top: 2px solid gray;
+  display: flex;
+}
+
+.discription {
+  margin: 50px 0 0 50px;
+  text-align: left;
+}
+
+.discription h3 {
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 50px;
+  text-align: center;
+  width: fit-content;
+  padding: 5px 10px;
+  color: white;
+}
+
+.parkopened {
+  margin: 50px 0;
+  font-size: 12px;
+}
+
+.parkImage img {
+  text-align: left;
+  width: 60%;
+}
+
+.parkRides {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.parkRides h1 {
+  font-weight: 400;
+  text-align: left;
+}
+
+.rides {
+  display: flex;
+  justify-content: start;
+}
+
+/****************************/
+/************RideCards****************/
+/****************************/
+
+.ride-img {
+  text-align: left;
+}
+
+.ride-img img {
+  width: 300px;
+  height: 300px;
+}
+
+.ride-img h1 {
+  font-size: 15px;
+  margin: 5px 0 0 0;
+}
+
+.ride-img p {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.rideLink {
+  text-decoration: none;
+  color: black;
+  margin-right: 100px;
+}
+
+/****************************/
+/************ViewRide****************/
+/****************************/
+
+.cardImg {
+  width: 100%;
+  height: 500px;
+}
+
+.viewCard img {
+  width: 100%;
+  height: 500px;
+}
+
+.cardDes {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0 0;
+}
+
+.cardDes h1 {
+  text-align: left;
+  width: 40%;
+}
+
+.cardDes div {
+  width: 50%;
+  text-align: left;
+}
+
+/****************************/
+/************About****************/
+/****************************/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.about-content {
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.about-content p {
+  line-height: 1.5em;
+}
+
+.gitLink a {
+  padding: 0 10px;
+}
+
+.gitLink a:not(:last-child) {
+  border-right: 2px solid black;
+}
