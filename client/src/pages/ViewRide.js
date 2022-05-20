@@ -9,7 +9,7 @@ const ViewRide = (props) => {
 
   useEffect(() => {
     const getRideDetails = async () => {
-      const res = await axios.get(`http://localhost:3001/rides/${id}`)
+      const res = await axios.get(`/rides/${id}`)
 
       setRideDetails(res.data)
     }

@@ -16,7 +16,7 @@ const CreateRide = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
-      .post('http://localhost:3001/rides', addRide)
+      .post('/rides', addRide)
       .then((res) => console.log('successful'))
       .catch((err) => console.log(err.data))
     navigate('/')

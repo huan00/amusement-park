@@ -17,7 +17,7 @@ const CreatePark = () => {
     e.preventDefault()
 
     axios
-      .post('http://localhost:3001/parks', addPark)
+      .post('/parks', addPark)
       .then((res) => console.log('successful'))
       .catch((err) => console.log(err.data))
 

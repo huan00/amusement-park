@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const getParks = async () => {
-      const res = await axios.get(`http://localhost:3001/parks`)
+      const res = await axios.get(`/parks`)
       setParks(res.data)
     }
     getParks()
@@ -22,7 +22,7 @@ const Home = () => {
 
   const getSearchResult = async (e) => {
     e.preventDefault()
-    const res = await axios.get(`http://localhost:3001/parks/`)
+    const res = await axios.get(`/parks`)
     const searchedParks = res.data.filter((item) => {
       return item.name.toLowerCase().includes(`${searchQuery}`)
     })

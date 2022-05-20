@@ -12,7 +12,7 @@ const ViewPark = (props) => {
 
   useEffect(() => {
     const getParkDetails = async () => {
-      const res = await axios.get(`http://localhost:3001/parks/${id}`)
+      const res = await axios.get(`/parks/${id}`)
 
       setParkDetails(res.data)
     }
@@ -21,7 +21,7 @@ const ViewPark = (props) => {
 
   useEffect(() => {
     const getRide = async () => {
-      const res = await axios.get(`http://localhost:3001/rides`)
+      const res = await axios.get(`/rides`)
       setRides(res.data)
     }
     getRide()
